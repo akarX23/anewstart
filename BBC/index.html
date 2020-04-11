@@ -37,6 +37,7 @@
 				margin: 6px;
 				float: left;
 			}
+			
 			#sign-in-text {
 				font-weight: bold;
 				font-size: 90%;
@@ -91,6 +92,7 @@
 				font-weight: normal;
 				float: left;
 			}
+			
 			#local-news {
 				float: right;
 				color: white;
@@ -112,26 +114,59 @@
 			}
 			
 			#menu-bar-2-container {
-				background-color: #A91717;
+				background-color: #BB1919;
 				width: 100%;
 			}
+			
 			#menu-bar-2 {
 				width: 100%;
 				margin: 0 auto; 
-				height: 30px;
+				height: 20px;
 			}
+			
 			#menu-bar-2 a {
 				color: white;
 				font-size: 14px;
 				text-decoration: none;
 				border-right: 1px solid #BB4545;
-				padding: 0 15px;
+				padding: 0 12px;
 				position: relative;
-				top: 8px;
+				top: 5px;
 				float: left;
 			}
+			
 			#menu-bar-2 a:hover{
 				text-decoration: underline;
+			}
+			
+			.no-border {
+				border: none !important;
+			}
+			
+			#down-arrow {
+				position: relative;
+				top: 8px;
+				left: -8px;
+				width: 8px;
+				height: 8px;
+			}
+			
+			#page-container {
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			#main-article-left {
+				width: 20%;
+				margin: 0;
+			}
+			
+			#big-text a {
+				color: black;
+				font-weight: bold;
+				text-decoration: none;
+				font-size: 27px;
+				margin: 5px 5px 0 0;
 			}
 			
 		</style>
@@ -217,8 +252,20 @@
 					<a href="">Health</a>
 					<a href="">World News TV</a>
 					<a href="">In Pictures</a>
-					<a href="">More</a>
+					<a href="" class="no-border">More</a>
+					<img id="down-arrow" src="Images/down-arrow.png">
 				</div>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div id="page-container">
+			
+				<div id="main-article-left">
+					<p id="big-text"><a href="">US death toll passes 2,000 in a single day</a></p>
+					<a href="" id="small-text">America now has half a million confirmed coronavirus cases but the outbreak may soon begin to level off.</a>
+				</div>
+			
 			
 			</div>
 			
