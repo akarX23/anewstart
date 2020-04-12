@@ -156,19 +156,81 @@
 				margin: 0 auto;
 			}
 			
-			#main-article-left {
-				width: 20%;
-				margin: 0;
+			h2 {
+				font-weight: normal;
+				padding-bottom: 1px;
+				margin-left: 10px;
+				margin-top: 15px;
+				font-size: 20px;
+				border-bottom: 3px solid #a91717;
+				width: 102px;
 			}
 			
-			#big-text a {
+			h3 a {
 				color: black;
-				font-weight: bold;
+				font-size: 30px;
+				margin-left: 10px;
 				text-decoration: none;
-				font-size: 27px;
-				margin: 5px 5px 0 0;
 			}
 			
+			h3 a:hover {
+				color: #1167a8;
+			}
+			
+			#article-summary {
+			color: #5a5a5a;
+			width: 270px;
+			margin-left: 10px;
+			float: left;
+			}
+			
+			#article-summary img {
+				height: 12px;
+				width: 15px;
+				
+			}
+			
+			#topic {
+				color: #a91717;
+				text-decoration: none;
+				border-left: 1px solid #CCCCCC;
+				padding-left: 7px;
+			}
+			
+			#article-summary a:hover {
+				color: #1167a8;
+			}
+			
+			#date {
+				padding-right: 7px;
+			}
+			
+			#article-container {
+				float: left;
+				width: 57%;
+				border-right: 1px solid #CCCCCC;
+				padding-right: 15px;
+			}
+			
+			#asda {
+				width: 400px;
+				margin-left: 20px;
+			}
+			
+			#article-hr {
+				border-top: 1px solid #a91717;
+				width: 50px;
+			}
+			
+			.article-link {
+				color: black;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			
+			h4 {
+				margin-left: 20px;
+			}
 		</style>
 
 		<body>
@@ -238,20 +300,20 @@
 			
 			<div id="menu-bar-2-container">
 				<div id="menu-bar-2">
-					<a href="">Home</a>
-					<a href="">Coronavirus</a>
-					<a href="">Video</a>
-					<a href="">World</a>
-					<a href="">Asia</a>
-					<a href="">UK</a>
-					<a href="">Business</a>
-					<a href="">Tech</a>
-					<a href="">Science</a>
-					<a href="">Stories</a>
-					<a href="">Entertainment Arts</a>
-					<a href="">Health</a>
-					<a href="">World News TV</a>
-					<a href="">In Pictures</a>
+					<a href="https://www.bbc.com/news">Home</a>
+					<a href="https://www.bbc.com/news/coronavirus">Coronavirus</a>
+					<a href="https://www.bbc.com/news/video_and_audio/headlines">Video</a>
+					<a href="https://www.bbc.com/news/world">World</a>
+					<a href="https://www.bbc.com/news/world/asia">Asia</a>
+					<a href="https://www.bbc.com/news/uk">UK</a>
+					<a href="https://www.bbc.com/news/business">Business</a>
+					<a href="https://www.bbc.com/news/technology">Tech</a>
+					<a href="https://www.bbc.com/news/science_and_environment">Science</a>
+					<a href="https://www.bbc.com/news/stories">Stories</a>
+					<a href="https://www.bbc.com/news/entertainment_and_arts">Entertainment Arts</a>
+					<a href="https://www.bbc.com/news/health">Health</a>
+					<a href="https://www.bbc.com/news/world_radio_and_tv">World News TV</a>
+					<a href="https://www.bbc.com/news/in_pictures">In Pictures</a>
 					<a href="" class="no-border">More</a>
 					<img id="down-arrow" src="Images/down-arrow.png">
 				</div>
@@ -260,11 +322,33 @@
 			<div class="clear"></div>
 			
 			<div id="page-container">
-			
-				<div id="main-article-left">
-					<p id="big-text"><a href="">US death toll passes 2,000 in a single day</a></p>
-					<a href="" id="small-text">America now has half a million confirmed coronavirus cases but the outbreak may soon begin to level of.</a>
+				<div id="main-article">
+					<h2>Technology</h2>
+					
+					<div id="article-container">
+					
+						<h3><a href="">Asda bug exposed payment details.</a></h3>
+					
+						<div id="article-summary">
+							<p>Security vulnerablities that put customers at risk have affected 
+							Asda's website for a couple of years, a security expert has revealed.</p>
+							<p><img src="Images/timer.png"><span id="date">19 January 2016</span><a id="topic" href="">Technology</a></p>
+							
+							<hr id="article-hr" align="left">
+							<p><a class="article-link" href="">Surveillance firm hit in hack attack</a></p>
+							<p><a class="article-link" href="">Ebay flaw existed for months</a></p>
+							<a href=""></a>
+						</div>
+						<img id="asda" src="Images/asda.png">
+					</div>
+					<div class="clear"></div>
+				
+					<div id="watch-listen">   
+						<h4>Watch/Listen</h4>
+					</div>
 				</div>
+				
+				
 			</div>
 			
 		</body>
