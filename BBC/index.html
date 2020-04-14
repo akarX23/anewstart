@@ -1,238 +1,7 @@
  <html>
 	<head>
 		<title>Home-BBC News</title>
-		<style type="text/css">
-			.main-header {
-				width: 100%;
-				margin:0 auto;
-				height: 40px;
-			}
-
-			body {
-				margin: 0;
-				padding: 0;
-				font-family: Helvetica, Arial, sans-serif;
-			}
-			#logo {
-				width: 90px;
-				height: 25px;
-				margin-top: 10px;
-				margin-left: 10px;
-				margin-right: 5px;
-				float: left;
-			}
-			.top-bar-section {
-				float: left;
-				border-left: 1px #CCCCCC solid;
-				height: 100%;
-			}
-			.top-bar-menu {
-				font-weight: bold;
-				font-size: 90%;
-				padding: 14px 20px 0 20px;
-				height: 26px;
-			}
-
-			#sign-in {
-				margin: 6px;
-				float: left;
-			}
-			
-			#sign-in-text {
-				font-weight: bold;
-				font-size: 90%;
-				position: relative;
-				top: 14px;
-				margin-right: 100px;
-			}
-			#arrow {
-				position: relative;
-				float: right;
-				margin: -13px 0 20px 20px;
-				width: 30px;
-				height: 40px;
-			}
-			#search {
-				background-color: #E4E4E4; 
-				border: none;
-				font-color: black;
-				font-weight: bold;
-				font-size: 14px;
-				margin: 7px 0 5px 5px;
-				padding: 5px 0 5px 5px;
-				height: 25px;
-				width: 140px;
-				float: left;
-			}
-			#search-image {
-				height: 31px;
-				margin: 0 0 5px 0;
-			}
-			.clear {
-				clear:float;
-			}
-			#menu-bar-container {
-				border-top: 1px solid #CCCCCC;
-				background-color: #BB1919;
-				width: 100%;
-				height: 60px;
-			}
-			
-			#menu-bar {
-				width: 100%;
-				padding-left: 8px;
-				padding-top: 5px;
-			}
-			
-			h1 {
-				padding: 0;
-				margin: 0;
-				color: white;
-				font-size: 40px;
-				font-weight: normal;
-				float: left;
-			}
-			
-			#local-news {
-				float: right;
-				color: white;
-				border: 1px #BB4545 solid;
-				width: 160px;
-				margin-top: 10px;
-				margin-right: 20px;
-				padding: 5px 5px 5px 5px;
-			}
-			
-			#local-news a {
-				color: white;
-				text-decoration: none;
-				font-size: 20px;
-			}
-			
-			#local-news a:hover {
-				text-decoration: underline;
-			}
-			
-			#menu-bar-2-container {
-				background-color: #BB1919;
-				width: 100%;
-			}
-			
-			#menu-bar-2 {
-				width: 100%;
-				margin: 0 auto; 
-				height: 30px;
-			}
-			
-			#menu-bar-2 a {
-				color: white;
-				font-size: 14px;
-				text-decoration: none;
-				border-right: 1px solid #BB4545;
-				padding: 0 12px;
-				position: relative;
-				top: 5px;
-				float: left;
-			}
-			
-			#menu-bar-2 a:hover{
-				text-decoration: underline;
-			}
-			
-			.no-border {
-				border: none !important;
-			}
-			
-			#down-arrow {
-				position: relative;
-				top: 8px;
-				left: -8px;
-				width: 8px;
-				height: 8px;
-			}
-			
-			#page-container {
-				width: 100%;
-				margin: 0 auto;
-			}
-			
-			h2 {
-				font-weight: normal;
-				padding-bottom: 1px;
-				margin-left: 10px;
-				margin-top: 15px;
-				font-size: 20px;
-				border-bottom: 3px solid #a91717;
-				width: 102px;
-			}
-			
-			h3 a {
-				color: black;
-				font-size: 30px;
-				margin-left: 10px;
-				text-decoration: none;
-			}
-			
-			h3 a:hover {
-				color: #1167a8;
-			}
-			
-			#article-summary {
-			color: #5a5a5a;
-			width: 270px;
-			margin-left: 10px;
-			float: left;
-			}
-			
-			#article-summary img {
-				height: 12px;
-				width: 15px;
-				
-			}
-			
-			#topic {
-				color: #a91717;
-				text-decoration: none;
-				border-left: 1px solid #CCCCCC;
-				padding-left: 7px;
-			}
-			
-			#article-summary a:hover {
-				color: #1167a8;
-			}
-			
-			#date {
-				padding-right: 7px;
-			}
-			
-			#article-container {
-				float: left;
-				width: 57%;
-				border-right: 1px solid #CCCCCC;
-				padding-right: 15px;
-			}
-			
-			#asda {
-				width: 400px;
-				margin-left: 20px;
-			}
-			
-			#article-hr {
-				border-top: 1px solid #a91717;
-				width: 50px;
-			}
-			
-			.article-link {
-				color: black;
-				text-decoration: none;
-				font-weight: bold;
-			}
-			
-			h4 {
-				margin-left: 20px;
-			}
-		</style>
-
+		<link rel="stylesheet" type="text/css" href="bbc-style.css">
 		<body>
 			<div class="main-header">
 				<img src="Images/bbc-logo.png" id="logo">
@@ -332,25 +101,38 @@
 						<div id="article-summary">
 							<p>Security vulnerablities that put customers at risk have affected 
 							Asda's website for a couple of years, a security expert has revealed.</p>
-							<p><img src="Images/timer.png"><span id="date">19 January 2016</span><a id="topic" href="">Technology</a></p>
+							<p><img class="clock" src="Images/timer.png"><span class="date">19 January 2016</span><a class="topic" href="">Technology</a></p>
 							
 							<hr id="article-hr" align="left">
 							<p><a class="article-link" href="">Surveillance firm hit in hack attack</a></p>
-							<p><a class="article-link" href="">Ebay flaw existed for months</a></p>
+							<p><a class="article-link" href="">ebay flaw existed for months</a></p>
 							<a href=""></a>
 						</div>
-						<img id="asda" src="Images/asda.png">
+						<img id="asda" src="Images/asda.png">	
 					</div>
 				</div>
 				
-				<div class="clear"></div>
-				
 				<div id="watch-listen">   
 					<h4>Watch/Listen</h4>
+					<img src="Images/news1.png" class="article-side-image">
+					<div class="side-article">
+						<p><a class="watch-listen-link" href="">UK science chief backs blockchains</a></p>
+						<p><img class="clock" src="Images/timer.png"><span class="date">19 January 2016</span></p>
+					</div>
+					<div class="clear"></div>
+					<img src="Images/news2.png" class="article-side-image">
+					<div class="side-article">
+						<p><a class="watch-listen-link" href="">Drone register gives 'accountability'</a></p>
+						<p><img class="clock" src="Images/timer.png"><span class="date border-right">19 January 2016</span><br><a class="topic no-border" href="">Technology</a></p>
+					</div>
+					<div class="clear"></div>
+					<img src="Images/news3.png" class="article-side-image">
+					<div class="side-article">
+						<p><a class="watch-listen-link" href="">SpaceX rocket explodes during landing</a></p>
+						<p><img class="clock" src="Images/timer.png"><span class="date border-right">19 January 2016</span><br><a class="topic no-border" href="">Science & Environment</a></p>
+					</div>
 				</div>
-				
 			</div>
-			
 		</body>
 	</head>
 </html>
