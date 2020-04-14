@@ -1,0 +1,27 @@
+<html>
+    
+	<head>
+		<title>Javascript</title>
+        
+        <style type="text/css">
+          
+        </style>
+	</head>
+	
+	<body>
+        
+        <input id="text-input">
+        <button id="my-button">Change text</button>
+        <div style="clear: both"></div>
+        <p id="some-text">This is some text</p>
+        
+        <script type="text/javascript">
+            document.getElementById("my-button").onclick = function() {
+                var user = document.getElementById("text-input").value;
+                document.getElementById("some-text").innerHTML = "You entered: " + user;
+            }
+            
+        </script>
+        
+	</body>
+</html>
