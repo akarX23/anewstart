@@ -1,27 +1,33 @@
 <html>
-    
-	<head>
-		<title>Javascript</title>
-        
-        <style type="text/css">
-          
-        </style>
-	</head>
-	
-	<body>
-        
-        <input id="text-input">
-        <button id="my-button">Change text</button>
-        <div style="clear: both"></div>
-        <p id="some-text">This is some text</p>
-        
-        <script type="text/javascript">
-            document.getElementById("my-button").onclick = function() {
-                var user = document.getElementById("text-input").value;
-                document.getElementById("some-text").innerHTML = "You entered: " + user;
+
+<head>
+    <title>Javascript</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+
+    <p>What is the magic word?</p>
+    <input id="magic-word">
+    <p><button id="checkmagic">Submit</button></p>
+
+    <script type="text/javascript">
+        document.getElementById("checkmagic").onclick = function() {
+           var x = Math.floor(Math.random() * 5 + 1);
+           var text = document.getElementById("magic-word").value;
+            //console.log(parseInt(text, 10) + " and " + x);
+            if(parseInt(text, 10) == x) {
+                alert("You got it!");
+            } else {
+                alert("Wrong! The right number is: " + x);
             }
-            
-        </script>
-        
-	</body>
+        }
+
+    </script>
+
+</body>
+
 </html>
