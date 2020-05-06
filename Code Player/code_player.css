@@ -1,0 +1,151 @@
+.whole-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid #C3073F;
+    background-color: #222930;
+    padding-right: 5px;
+}
+
+h1 a {
+    font-size: 30px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: #4EB1BA;
+    float: left;
+    text-decoration: none;
+}
+
+#head-describe {
+    float: right;
+    color: #E9E9E9;
+    font-size: 22px;
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    right: 10px;
+    margin-right: 2px;
+}
+
+#lang-panel {
+    margin-top: 72px;
+    width: 100%;
+    height: 60px;
+    background-color: #4E4E50;
+}
+
+#button-contain {
+    width: 380px;
+    margin: auto;
+    height: 47px;
+    border-radius: 10%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.lang-toggle {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #950740;
+    border-left: 1px solid #950740;
+    font-size: 15px;
+    font-family: cursive, sans-serif;
+    float: left;
+    color: #FFCB9A;
+    background-color: #1F2833;
+    border-bottom-style: hidden;
+}
+
+#html {
+    border-left: 2px solid #950740;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top: 3px solid #5ef0f4;
+}
+
+#css {
+    border-top: 3px solid #800080;
+}
+
+#js {
+    border-top: 3px solid #00b300;
+}
+
+#output {
+    border-right: 2px solid #950740;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-top: 3px solid #0000cc;
+}
+
+#edit-container {
+    width: 100%;
+    height: 600px;
+    margin-top: 132px;
+    background-color: #282a36;
+    box-sizing: border-box;
+}
+
+.editor {
+    height: 100%;
+    float: left;
+    border-right: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+    box-sizing: border-box;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.code {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    overflow: hidden;
+    resize: vertical;
+}
+
+#html-edit {
+    border-top: 3px solid #5ef0f4;
+}
+
+#css-edit {
+    border-top: 3px solid #800080;
+}
+
+#js-edit {
+    border-top: 3px solid #00b300;
+}
+
+#output-edit {
+    border-top: 3px solid #0000cc;
+    background-color: white;
+}
+
+#html-code {
+    color: #8be9fd;
+}
+
+#css-code {
+    color: #ff79c6;
+}
+
+#js-code {
+    color: #50fa7b;
+}
+
+#result {
+    width: 100%;
+    height: 100%;
+}
