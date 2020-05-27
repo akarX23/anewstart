@@ -1,56 +1,52 @@
 <html>
-
-<head>
+  <head>
     <title>Code Player</title>
 
     <script type="text/javascript" src="jQuery.min.js"></script>
     <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
-    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
-    
-    <link href="code_player.css" rel="stylesheet">
+    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
 
-</head>
+    <link href="code_player.css" rel="stylesheet" />
+  </head>
 
-<body>
-
+  <body>
     <div id="header" class="whole-page">
-        <h1><a href="index.html">Code Player</a></h1>
-        <p id="head-describe">A simple text editor for WebDev</p>
+      <h1><a href="index.html">Code Player</a></h1>
+      <p id="head-describe">A simple text editor for WebDev</p>
     </div>
 
     <div class="clear"></div>
 
     <div id="lang-panel" class="whole-page">
-        <div id="button-contain">
-            <button class="lang-toggle active" id="html">HTML</button>
-            <button class="lang-toggle active" id="css">CSS</button>
-            <button class="lang-toggle active" id="js">JavaScript</button>
-            <button class="lang-toggle active" id="output">Output</button>
-        </div>
+      <div id="button-contain">
+        <button class="lang-toggle active" id="css">CSS</button>
+        <button class="lang-toggle active" id="js">JavaScript</button>
+        <button class="lang-toggle active" id="output">Output</button>
+      </div>
     </div>
 
     <div class="clear"></div>
 
     <div id="edit-container" class="whole-page">
-        <div class="editor" id="html-edit">
-            <textarea class="code" id="html-code"><p>Hello World</p></textarea>
-        </div>
+      <div class="editor" id="html-edit">
+        <textarea class="code" id="html-code"><p>Hello World</p></textarea>
+      </div>
 
-        <div class="editor" id="css-edit">
-            <textarea class="code" id="css-code">p {color: red}</textarea>
-        </div>
+      <div class="editor" id="css-edit">
+        <textarea class="code" id="css-code">p {color: red}</textarea>
+      </div>
 
-        <div class="editor" id="js-edit">
-            <textarea class="code" id="js-code">alert("1) Live output as you type.\n2) Buttons can be toggled.\n3) Enjoy Coding!")</textarea>
-        </div>
+      <div class="editor" id="js-edit">
+        <textarea class="code" id="js-code">
+alert("1) Live output as you type.\n2) Buttons can be toggled.\n3) Enjoy Coding!")</textarea
+        >
+      </div>
 
-        <div class="editor" id="output-edit">
-            <iframe id="result"></iframe>
-        </div>
+      <div class="editor" id="output-edit">
+        <iframe id="result"></iframe>
+      </div>
     </div>
 
     <script type="text/javascript" src="code_player.js"></script>
-
-</body>
-
+  </body>
 </html>
