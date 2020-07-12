@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 and CSS 3</title>
+
+    <style>
+      #myCanvas {
+        border: 2px solid rgba(122, 94, 94, 0.856);
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="500" height="500"> </canvas>
+    <button id="start" onclick="start()">Start</button>
+    <button id="stop" onclick="stop()">Stop</button>
+    <script>
+      //initializing canvas
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+      var radius = canvas.width / 2;
+      var seconds = 0;
+      var minutes = 0;
+      var hours = 0;
+      var running = true;
+      var requestId = 0;
+
+      function drawHand(strokeStyle, lineWidth, time, length) {
+        context.beginPath();
+        context.strokeStyle = strokeStyle;
+        context.lineWidth = lineWidth;
+        context.moveTo(radius, radius);
+        context.lineTo(
+          radius + length * Math.sin((Math.PI / 30) * time),
+          radius - length * Math.cos((Math.PI / 30) * time)
+        );
+        context.stroke();
+      }
+
+      function updateTime() {
+        if (running) seconds += 1;
+        if (hours == 60) {
+          hours = 0;
+        }
+        if (minutes == 60) {
+          hours += 1;
+          minutes = 0;
+        }
+        if (seconds == 60) {
+          minutes += 1;
+          seconds = 0;
+        }
+      }
+
+      var draw = function () {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        //drawing circle
+        context.beginPath();
+        context.fillStyle = "black";
+        context.arc(radius, radius, radius, 0, 2 * Math.PI);
+        context.fill();
+
+        //styling digits
+        context.font = radius / 6 + "px arial";
+        context.fillStyle = "white";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+
+        //positioning digits
+        for (var i = 1; i <= 12; i++) {
+          context.fillText(
+            i,
+            radius + radius * 0.9 * Math.sin((Math.PI / 6) * i),
+            radius - radius * 0.9 * Math.cos((Math.PI / 6) * i)
+          );
+        }
+
+        //second hand
+        var handRadius = radius;
+        drawHand("red", 1, seconds, handRadius);
+
+        //minute hand
+        handRadius = radius * 0.8;
+        drawHand("green", 5, minutes, handRadius);
+
+        //hours hand
+        handRadius = radius * 0.5;
+        drawHand("magenta", 8, hours, handRadius);
+
+        requestId = requestAnimationFrame(draw);
+      };
+      draw();
+      setInterval(updateTime, 0);
+
+      function start() {
+        running = true;
+        requestId = requestAnimationFrame(draw);
+      }
+      function stop() {
+        running = false;
+        cancelAnimationFrame(requestId);
+      }
+    </script>
+  </body>
+</html>

@@ -17,3 +17,8 @@ header input {
   font-size: 20px;
   margin: 20px 0;
 }
+
+.news_item {
+  background-color: rebeccapurple;
+  color: yellow;
+}
